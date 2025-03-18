@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@font-face {
+    font-family: 'gamebubble';
+    src: url(media/fontes/gamebubble.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+        --cor0:#f8f9fa;
+        --cor1:#ffdb57;
+        --cor2:#a7d8f0;
+        --cor3:#5d97b4;
+        --cor4:#1f628c;
+        --cor5:#7d7d7d;
+        --cor6:#424241;
+        --fonte-padrao: 'Arimo', sans-serif;
+        --fonte-destaque: 'gamebubble', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    text-align: justify;  
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor0) 20%, var(--cor2), var(--cor3), var(--cor4));
+    min-height: 150px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding-top: 40px;
+}
+
+nav {
+    padding: 20px 10px 10px 10px;
+    font-family: var(--fonte-destaque);
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor3);
+    font-size: 1.3em;
+    padding: 10px 10px 10.49999952316289px 10px;
+}
+a:hover {
+    background-color: var(--cor2);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+}
+
+p {
+    font-family: var(--fonte-padrao);
+}

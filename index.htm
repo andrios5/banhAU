@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>BanhAU</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="media/20.png" alt="">
+        </h1>
+        <nav>
+            <a href="#">Artigos</a>
+            <a href="#">Nossa Loja</a>
+            <a href="#">Agendar Banho</a>
+            <a href="#">Fale Conosco</a>
+        </nav>
+    </header>
+        <main>
+            <article>
+                <h1>
+                    Cuidando do seu pet
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae perferendis, corporis similique vel assumenda odio at quis. Aspernatur fugit aut in repellendus doloribus quam quos corrupti tempora! Neque, ratione aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quisquam culpa minima cum, amet perspiciatis numquam reprehenderit perferendis distinctio quasi aut, ex assumenda officiis similique mollitia, animi sit quod tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem earum dolorem delectus itaque consectetur? Dignissimos earum quibusdam eum rem minus magni tempora, eveniet optio, quas consequuntur quidem, dolor omnis sint!</p>
+                <img src="" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga inventore, perferendis id, quia provident numquam, amet obcaecati explicabo laborum sint voluptatem. Dolor necessitatibus magnam cum sed, nesciunt omnis ullam mollitia!</p>
+                <h2>Nossos banhos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quia quod doloribus corporis rerum asperiores, unde ullam dolor perferendis placeat, in alias vero! Dolorem facilis minima eius impedit corrupti eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet distinctio, quod reprehenderit atque, hic repellat quasi cum at aperiam dolor ratione mollitia, similique placeat quam odio eius? Iure, deserunt.</p>
+                
+                <div class="slideshow">
+                    <img class="mySlides" src="media/Cosmeticos/1-1000.png">
+                    <img class="mySlides" src="media/Cosmeticos/2-1000.png">
+                    <img class="mySlides" src="media/Cosmeticos/3-1000.png">
+                    <img class="mySlides" src="media/Cosmeticos/4-1000.png">
+                    <img class="mySlides" src="media/Cosmeticos/5-1000.png">
+                    <img class="mySlides" src="media/Cosmeticos/6-1000.png">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem modi mollitia iure laudantium similique natus quia at itaque. Non laborum reiciendis maiores quas error, consequuntur omnis odit esse voluptas? Temporibus!</p>
+                <aside>
+                    <h3>Agende um banho</h3>
+                    <form action="">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone">
+                        <label for="data">Data:</label>
+                        <input type="date" name="data" id="data">
+                        <label for="horario">Horário:</label>
+                        <input type="time" name="horario" id="horario">
+                        <button type="submit">Agendar</button>
+                    </form>
+                </aside>
+            </article>
+        </main>
+        <footer>
+            <p>Desenvolvido por Andrios</p>
+        </footer>
+
+        
+
+</body>
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+</html>
