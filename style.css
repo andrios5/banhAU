@@ -24,7 +24,7 @@
 }
 
 body {
-    background-color: var(--cor0);
+    background-color: var(--cor1);
     font-family: var(--fonte-padrao);
     font-size: 18px;
     text-align: justify;  
@@ -33,28 +33,55 @@ body {
 header {
     background-image: linear-gradient(to top, var(--cor0) 20%, var(--cor2), var(--cor3), var(--cor4));
     min-height: 150px;
+    max-height: 260px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding-top: 40px;
+    padding-top: 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+ 
+}
+
+h1 > img {
+    width: 40%;
 }
 
 nav {
-    padding: 20px 10px 10px 10px;
+    padding: 0px 10px 10px 10px;
     font-family: var(--fonte-destaque);
     text-align: center;
+    
+    
+    
 }
 
 nav a {
     text-decoration: none;
     color: var(--cor3);
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 10px 10px 10.49999952316289px 10px;
+    
 }
 a:hover {
     background-color: var(--cor2);
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*main*/
+
+main {
+    background-color: var(--cor0);
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    max-width: 1000px;
+    box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, 0.2);
+
 }
 
 h1 {
