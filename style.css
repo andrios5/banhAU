@@ -87,7 +87,7 @@ main h2 {
     padding-bottom: 15px;
 }
 
-p {
+main p {
     font-family: var(--fonte-padrao);
     padding: 15px 0px 15px 0px;
     text-indent: 50px;
@@ -218,6 +218,11 @@ footer p {
 
     form label {
         padding: 5px;
+        font-size: 1.1em;
+    }
+
+    form input {
+        font-size: 1.1em;
     }
 
     footer {
