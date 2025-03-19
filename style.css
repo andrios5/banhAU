@@ -24,7 +24,8 @@
 }
 
 body {
-    background-color: var(--cor1);
+    background-color: var(--cor4);
+    background-image: image-set("media/textura3.png");
     font-family: var(--fonte-padrao);
     font-size: 18px;
     text-align: justify;  
@@ -86,6 +87,8 @@ main {
     margin-bottom: 100px;
     margin-top: -5px;
 }
+
+
 
 main h2 {
     font-family: var(--fonte-destaque);
@@ -253,7 +256,7 @@ form div{
 
     footer {
         background-color: var(--cor6);
-        color: var(--cor2);
+        color: var(--cor1);
         text-align: center;
         padding: 2px 0px 2px 0px;
         font-family: var(--fonte-destaque);
