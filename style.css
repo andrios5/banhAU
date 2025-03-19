@@ -180,3 +180,33 @@ footer {
 footer p {
     padding: 5px;
 }
+
+@media screen and (max-width: 1100px) {
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    nav a {
+        padding: 10px 7px 10.49999952316289px 7px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 16px;
+    }
+
+
+    main {
+        margin: auto;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 1.0em;
+        padding: 10px 3px 10.49999952316289px 3px;
+    }
+
+}
