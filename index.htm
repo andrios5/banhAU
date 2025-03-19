@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="media/20.png" alt="">
+        <img src="media/20.png" alt="Logo banhAU">
         <h1>BanhAU
         </h1>
     </header>
@@ -22,9 +22,7 @@
     
         <main>
             <article>
-                <h2>
-                    🐾 Quem Somos
-                </h2>
+                <h2><img src="3.png" alt="Patinha"> Quem Somos</h2>
                 <p>Tudo começou com um amor incondicional pelos animais e o desejo de transformar a hora do banho em um momento especial. A <strong>banhAU</strong> nasceu do sonho de proporcionar cuidado e carinho aos animais de estimação, além de um simples banho e tosa. Desde o início, queríamos criar um espaço onde cada patinha fosse recebida com afeto, segurança e conforto, garantindo que cada animalzinho se sentisse em casa.</p>
                 <div class="slideshow">
                     <img class="mySlides" src="media/Banho/banho1.png">
@@ -34,7 +32,7 @@
                 </div>
                 <p>Acreditamos que cuidar de um animal de estimação é mais do que uma rotina, é um gesto de amor. Por isso, cada banho, cada corte de pelo e cada detalhe do nosso atendimento é pensado com dedicação. Aqui, cada rabo abandonado e cada olhar brilhante nos lembra do nosso propósito: oferecer bem-estar para os animais e tranquilidade para seus tutores. Afinal, eles fazem parte da família, e merecem todo o carinho do mundo! 
                 </p>
-                <h2>🐾 Um espaço completo para cuidar do seu pet!</h2>
+                <h2><img src="3.png" alt="Patinha"> Um espaço completo para cuidar do seu pet!</h2>
                 <p>Na <strong>banhAU</strong>, cada detalhe foi pensado para oferecer o melhor para os animais. Além do banho e tosa, contamos com uma loja repleta de itens essenciais para o dia a dia do seu pet. Aqui você encontra desde rações e comedouros até roupinhas, brinquedos e acessórios, tudo escolhido com carinho para garantir conforto, bem-estar e diversão para seu companheiro de quatro patas.</p>
                 <p>E para quem quer levar para casa o mesmo cuidado que oferecemos em nosso espaço, criamos a linha de produtos <strong>banhAU</strong>, desenvolvida com fórmulas especiais para a higiene e hidratação dos animais de estimação. Nossos shampoos, condicionadores e hidratantes de patinhas são os mesmos usados em nossos serviços, proporcionando um banho seguro, cheiroso e cheio de carinho, onde quer que seu pet esteja. Porque eles merecem sempre o melhor! </p>
                 <aside>
@@ -64,39 +62,15 @@
                     </form>
                 </aside>
                 
-                <h2>🐾 Cuidado e carinho em cada detalhe!</h2>
+                <h2><img src="3.png" alt="Patinha"> Cuidado e carinho em cada detalhe!</h2>
                 <p>Aqui, o momento do banho e tosa é pensado para ser leve, seguro e cheio de carinho. Utilizamos produtos de alta qualidade – os mesmos da nossa linha exclusiva – e técnicas que garantem conforto para cada pet, respeitando suas necessidades e personalidade. Nosso espaço é preparado para proporcionar uma experiência tranquila, deixando seu amigo limpo, cheiroso e feliz. Agende um horário e traga seu animal de estimação para viver esse cuidado com a gente!</p>
-                <div class="carousel">
-                    <input type="radio" name="carousel" id="slide1" checked>
-                    <input type="radio" name="carousel" id="slide2">
-                    <input type="radio" name="carousel" id="slide3">
-                    <input type="radio" name="carousel" id="slide4">
-                    <input type="radio" name="carousel" id="slide5">
-                    <div class="slides">
-                      <div class="slide">
-                        <img src="media/Cosmeticos/1-1000.png" alt="Slide 1">
-                      </div>
-                      <div class="slide">
-                        <img src="media/Cosmeticos/2-1000.png" alt="Slide 2">
-                      </div>
-                      <div class="slide">
-                        <img src="media/Cosmeticos/3-1000.png" alt="Slide 3">
-                      </div>
-                      <div class="slide">
-                        <img src="media/Cosmeticos/4-1000.png" alt="Slide 4">
-                      </div>
-                      <div class="slide">
-                        <img src="media/Cosmeticos/5-1000.png" alt="Slide 5">
-                      </div>
-                    </div>
-                    <div class="navigation">
-                      <label for="slide1"><img src="media/patinha.png" alt=""></label>
-                      <label for="slide2"><img src="media/patinha.png" alt=""></label>
-                      <label for="slide3"><img src="media/patinha.png" alt=""></label>
-                      <label for="slide4"><img src="media/patinha.png" alt=""></label>
-                      <label for="slide5"><img src="media/patinha.png" alt=""></label>
-                    </div>
-                  </div>
+                <div class="slideshow">
+                    <img class="mySlides2" src="media/Cosmeticos/1-1000.png">
+                    <img class="mySlides2" src="media/Cosmeticos/2-1000.png">
+                    <img class="mySlides2" src="media/Cosmeticos/3-1000.png">
+                    <img class="mySlides2" src="media/Cosmeticos/4-1000.png">
+                    <img class="mySlides2" src="media/Cosmeticos/5-1000.png">
+                </div>
                 
             </article>
         </main>
@@ -121,6 +95,21 @@
       if (myIndex > x.length) {myIndex = 1}    
       x[myIndex-1].style.display = "block";  
       setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+
+    var myIndex2 = 0;
+    carousel2();
+    
+    function carousel2() {
+      var a;
+      var b = document.getElementsByClassName("mySlides2");
+      for (a = 0; a < b.length; a++) {
+        b[a].style.display = "none";  
+      }
+      myIndex2++;
+      if (myIndex2 > b.length) {myIndex2 = 1}    
+      b[myIndex2-1].style.display = "block";  
+      setTimeout(carousel2, 2000); // Change image every 2 seconds
     }
 </script>
 </html>
