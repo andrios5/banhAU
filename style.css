@@ -46,17 +46,18 @@ nav {
     background-color: var(--cor0);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     padding: 10px 10px 10px 10px;
-    font-family: var(--fonte-destaque);
     text-align: center;
     position: sticky;
     top: 0;
 }
 
 nav a {
+    font-family: var(--fonte-padrao);
     text-decoration: none;
+    font-weight: bold;
     color: var(--cor3);
-    font-size: 1.2em;
-    padding: 10px 10px 10.49999952316289px 10px;
+    font-size: 1.4em;
+    padding: 10px 20px 10.49999952316289px 20px;
 }
 a:hover {
     background-color: var(--cor2);
@@ -188,7 +189,7 @@ footer p {
     }
 
     nav a {
-        padding: 10px 7px 10.49999952316289px 7px;
+        padding: 10px 10px 10.49999952316289px 10px;
     }
 }
 
@@ -201,12 +202,25 @@ footer p {
 
     main {
         margin: auto;
-        padding: 10px;
+        padding: 15px;
+        margin-bottom: 15px;
     }
 
+
     nav a {
-        font-size: 1.0em;
-        padding: 10px 3px 10.49999952316289px 3px;
+        font-size: 1.2em;
+        font-family: var(--fonte-padrao);
+        font-weight: bold;
+        padding: 10px 5px 10.49999952316289px 5px;
+        border: 10px black;
+    }
+
+    form label {
+        padding: 5px;
+    }
+
+    footer {
+        position: static;
     }
 
 }
