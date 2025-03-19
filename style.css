@@ -46,7 +46,7 @@ header > h1 > img {
 nav {
     background-color: var(--cor0);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.150);
-    padding: 10px 10px 10px 10px;
+    padding: 15px 10px 10px 10px;
     text-align: center;
     position: sticky;
     top: 0;
@@ -196,6 +196,10 @@ footer p {
         margin-right: 5%;
     }
 
+    nav {
+        padding: 12.5px 10px 10px 10px;
+    }
+
     nav a {
         padding: 10px 10px 10.49999952316289px 10px;
     }
@@ -216,6 +220,9 @@ footer p {
         width: 90%;
     }
 
+    nav {
+        padding: 15px 10px 10px 10px;
+    }
 
     nav a {
         font-size: 1.2em;
